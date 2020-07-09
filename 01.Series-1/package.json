@@ -1,8 +1,0 @@
-{
-  "name": "@becode/js-intro",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "api": "npx json-server ./_shared/api.json"
-  }
-}
