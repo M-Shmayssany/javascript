@@ -6,6 +6,24 @@
 
     const performOperation = operation => {
         // perform the operation
+        let opOne = new Number(document.getElementById("op-one").value);
+        let opTwo = new Number(document.getElementById("op-two").value);
+        
+        switch(operation){
+            case "addition":
+                alert( opOne + " + " + opTwo + " = " + (opOne + opTwo));
+                break;
+            case "substraction":
+                alert( opOne + " - " + opTwo + " = " + (opOne - opTwo));
+                break;
+            case "multiplication":
+                alert( opOne + " * " + opTwo + " = " + (opOne * opTwo));
+                break;
+            case "division":
+                alert( opOne + " / " + opTwo + " = " + (opOne / opTwo));
+                break;
+            
+        }
     };
 
     Array.from(document.querySelectorAll("button.operator")).forEach($btn =>

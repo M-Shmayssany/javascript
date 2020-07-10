@@ -7,7 +7,12 @@
     document.getElementById("run").addEventListener("click", () => {
 
         // your code here
-
+        let numberToSort = document.getElementById('numbers').value;
+        let arrayToSort = numberToSort.split(',');
+        let sortedArray = arrayToSort.sort((a, b)=>{
+                return a - b;
+            });
+        alert(sortedArray);
     });
 
 })();

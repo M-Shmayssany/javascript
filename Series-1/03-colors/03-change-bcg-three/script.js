@@ -5,5 +5,9 @@
 (() => {
 
     // your code here
-
+document.getElementById("run").addEventListener("click", ()=>{
+    let randomColor = '#' + Math.floor(Math.random()*16777215).toString(16); // generate rendom hex number
+    document.body.style.backgroundColor = randomColor;
+    console.log(randomColor);
+})
 })();
