@@ -31,4 +31,19 @@
     ]);
 
     // your code here
+    document.getElementById('run').addEventListener('click', ()=>{
+        function randIntGen(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+        let myAdj = Array.from(adjectives);
+        let bird = randIntGen(0, birds.length -1);
+        let adjective = randIntGen(0, myAdj.length -1);
+
+        if (birds[bird].fem){
+            document.getElementById('target').innerHTML = `La ${birds[bird].name} ${myAdj[adjective]}e`;
+        }else{
+            document.getElementById('target').innerHTML = `Le ${birds[bird].name} ${myAdj[adjective]}`;
+        }
+        
+    });
 })();

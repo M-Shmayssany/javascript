@@ -81,5 +81,10 @@
     ];
 
     // your code here
-
+    document.getElementById('run').addEventListener('click', ()=>{
+        let found = people.find((obj) => obj.firstname === "Jean" && obj.lastname === "Dupont");
+        console.log("the email is: " + found.email);
+        let idxFound = people.findIndex((idx) => idx.firstname === "Jean" && idx.lastname === "Dupont");
+        console.log("the index is: " + idxFound)
+    });
 })();

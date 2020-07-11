@@ -82,5 +82,12 @@
     ];
 
     // your code here
-
+    const arrSum = arr => arr.reduce((a,b) => a + b, 0);
+    document.getElementById('run').addEventListener('click', ()=>{
+        let arrAges = [];
+        for(i=0; i < people.length; i++){
+            arrAges.push(people[i].age);
+        }
+        console.log(arrSum(arrAges));
+    });
 })();

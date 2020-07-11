@@ -18,5 +18,13 @@
     ];
 
     // your code here
-
+    document.getElementById('run').addEventListener('click', ()=>{
+        let answer = fruits.find((arr) => arr == 'apple');
+        
+        if(answer){
+            console.log("yes");
+        }else{
+            console.log("no");
+        }
+    });
 })();
