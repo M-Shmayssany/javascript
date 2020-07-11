@@ -7,5 +7,11 @@
             return `${this.constructor.greeting}! I'm ${this.name}!`;
         }
     }
-    // your code here
+    //TODO your code here 
+    document.getElementById('run').addEventListener('click', ()=>{
+        Animal.constructor.name = this.name;
+        Animal.constructor.greeting = 'hello';
+        let cat = new Animal("cat");
+        console.log(cat.sayHello());
+    });
 })();
