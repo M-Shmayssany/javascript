@@ -12,5 +12,16 @@
     ];
 
     // your code here
+    let imgTag = document.getElementsByTagName('img')[0];
+    let counter = 0;
+    document.getElementById('next').addEventListener('click', ()=>{
+        if(counter < 5){
+            imgTag.setAttribute('src', gallery[counter]);
+            counter++;
+        }else{
+            imgTag.setAttribute('src', gallery[0])
+            counter = 1;
+        }
+    });
 
 })();

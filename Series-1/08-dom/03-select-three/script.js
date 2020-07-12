@@ -4,5 +4,9 @@
 (() => {
 
     // your code here
-
+    const targets = document.getElementsByClassName('target');
+    
+    for (let target of targets) {
+        target.innerHTML = "owned";
+    }        
 })();

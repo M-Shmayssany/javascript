@@ -4,5 +4,14 @@
 (() => {
 
     // your code here
-
+    document.getElementById('run').addEventListener('click', ()=>{
+        let passOne = document.getElementById('pass-one');
+        let passTwo = document.getElementById('pass-two');
+        if(passOne.value===passTwo.value){
+            console.log("ok");
+        }else{
+            passOne.setAttribute('class', 'error');
+            passTwo.setAttribute('class', 'error');
+        }
+    });
 })();
