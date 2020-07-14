@@ -3,4 +3,15 @@
 
 (() => {
     // your code here
+    document.getElementById('run').addEventListener('click', ()=>{
+        
+        const promisedPersons = window.lib.getPersons();
+    
+        promisedPersons.then(persons=>{
+            persons.forEach(person => {
+                console.log(`${person.id} - ${person.name}`);
+            });
+        }).catch(err=> console.log(err));
+    });
+
 })();

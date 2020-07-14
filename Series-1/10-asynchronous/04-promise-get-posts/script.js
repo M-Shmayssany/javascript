@@ -3,4 +3,12 @@
 
 (() => {
     // your code here
+    document.getElementById('run').addEventListener('click', ()=>{
+        async function readPosts(){
+            const promisedPosts = await window.lib.getPosts();
+            console.log(promisedPosts);
+        } 
+        readPosts();
+    });
+
 })();
